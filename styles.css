@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Light background color */
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #6f4c3e; /* Border color */
+}
+
+th {
+    background-color: #6695db; /* Header background color */
+    color: white; /* Header text color */
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    background-color: #f9f9f9; /* Light background for cells */
+}
+
+td:hover {
+    background-color: #eaeaea; /* Shading on hover */
+}
+
+/* Button Styling */
+.btn-dark {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-dark:hover {
+    background-color: #5a3c31; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly grow */
+}
