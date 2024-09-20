@@ -33,18 +33,18 @@ table, th, td {
 }
 
 th {
-    background-color: #6695db; /* Header background color */
-    color: white; /* Header text color */
+    background-color: #6695db; 
+    color: white; 
 }
 
 td {
     padding: 10px;
     text-align: left;
-    background-color: #f9f9f9; /* Light background for cells */
+    background-color: #f9f9f9; 
 }
 
 td:hover {
-    background-color: #eaeaea; /* Shading on hover */
+    background-color: #eaeaea; 
 }
 
 /* Button Styling */
@@ -53,6 +53,27 @@ td:hover {
 }
 
 .btn-dark:hover {
-    background-color: #5a3c31; /* Darker color on hover */
-    transform: scale(1.05); /* Slightly grow */
+    background-color: #5a3c31; 
+    transform: scale(1.05); 
+}
+.color-change {
+    font-size: 3em;
+    transition: color 0.9s;
+}
+
+.color-change:hover {
+    color: red;
+}
+
+/* Add more colors */
+.color-change:hover {
+    animation: colorChange 1s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: green; }
+    100% { color: blue; }
 }
